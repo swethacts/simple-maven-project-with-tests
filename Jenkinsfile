@@ -11,7 +11,7 @@ pipeline {
 			chmod 777 ./ci/scripts/functional-test.sh
 			./ci/scripts/functional-test.sh
 		'''
-		junit 'tests/*.xml'		
+		junit 'tests/results/*.xml'		
 		sh 'echo "bye-world"'
 		//slackSend "Docker Container Destroyed"
 		//slackSend "Build Completed - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
