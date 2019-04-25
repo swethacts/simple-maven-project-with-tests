@@ -33,7 +33,7 @@ protractor protractor.conf.js
 echo "Executing unit test cases..."
 #grunt runee --force
 
-cd ../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/testresults
+cd ../src/test/java/test/testresults
 ls -ltr
 cp *.xml ../../../../../../../../../../tests
 ls -ltr
